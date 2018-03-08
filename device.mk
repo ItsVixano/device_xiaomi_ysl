@@ -34,6 +34,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.goodix.sh \
     init.recovery.qcom.rc \
     init.ysl.rc
 
