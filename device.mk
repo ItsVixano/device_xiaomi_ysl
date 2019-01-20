@@ -49,6 +49,12 @@ PRODUCT_PACKAGES += \
 # Properties
 -include device/xiaomi/ysl/prop.mk
 
+# Camera
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0_vendor \
+    android.frameworks.displayservice@1.0
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.goodix.sh \
