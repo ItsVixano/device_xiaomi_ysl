@@ -613,3 +613,10 @@ vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|95d84ef473d4cb733297c
 vendor/lib64/libkeymasterdeviceutils.so|784e8f3e6bb36214d171ba127454554049d140f5
 vendor/lib64/libkeymasterprovision.so|245fa13cad4dc81e66bc6fc3b7d20fa6c1afdefc
 vendor/lib64/libkeymasterutils.so|126096a6ce1ce50db8193a4617f1b1b0f6b3105c
+
+# QC RIL - from daisy V11.0.21.0.QDLMIXM
+vendor/bin/hw/qcrild|c0db5589a45874c31c0bb7e8a7151511505c1e04
+vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
+vendor/lib64/libqcrilFramework.so|3d8f25d13533f6fa45a36b23feb250291b663370
+vendor/lib64/libril-qc-hal-qmi.so|9f58de2abe6a3d67a341692c5870929a66f0b8b2|50f7b4ff4f8cf0aa514f2cdc0b0dcdeaf36e5419
+vendor/lib64/qcrild_librilutils.so|c23470619690a34f7442fb6b26345de5dc4de880
