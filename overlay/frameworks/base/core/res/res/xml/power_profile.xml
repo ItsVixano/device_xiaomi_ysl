@@ -20,8 +20,8 @@
       <value>68</value>
       <value>76</value>
   </array>
-  <item name="cpu.awake">4</item>
   <item name="cpu.idle">3</item>
+  <item name="cpu.suspend">4</item>
   <item name="battery.capacity">3080</item>
   <item name="bluetooth.active">60</item>
   <item name="bluetooth.at">2</item>
