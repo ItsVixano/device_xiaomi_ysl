@@ -14,6 +14,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "camera.device@3.4-external-impl.so" "camera.device@3.4-external-impl-v28.so" "${2}"
             "${PATCHELF}" --replace-needed "camera.device@3.4-impl.so" "camera.device@3.4-impl-v28.so" "${2}"
             ;;
+        vendor/lib/hw/camera.msm8953.so)
+            "${PATCHELF}" --replace-needed "libui.so" "libshims_libui.so" "${2}"
+            ;;
         vendor/lib/libmmcamera2_iface_modules.so)
             # Always set 0 (Off) as CDS mode in iface_util_set_cds_mode
             sed -i -e 's|\x15\xb3\x20\x68|\x15\xb3\x00\x20|g' "${2}"
