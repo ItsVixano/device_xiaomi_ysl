@@ -50,8 +50,5 @@ VENDOR_SECURITY_PATCH := 2020-05-05
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/ysl/BoardConfigVendor.mk
