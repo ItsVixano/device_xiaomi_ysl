@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=sakura
+export DEVICE=ysl
 export DEVICE_COMMON=msm8953-common
 export VENDOR=xiaomi
 

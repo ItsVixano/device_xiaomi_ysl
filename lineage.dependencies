@@ -1,19 +1,19 @@
 [
   {
     "remote":      "github",
-    "repository":  "device_xiaomi_msm8953-common-sakura",
+    "repository":  "device_xiaomi_msm8953-common-ysl",
     "target_path": "device/xiaomi/msm8953-common"
   },
   {
     "remote":      "github",
-    "repository":  "mahajant99/vendor_xiaomi_sakura",
+    "repository":  "mahajant99/vendor_xiaomi_ysl",
     "target_path": "vendor/xiaomi",
-    "branch":      "lineage-17.0"
+    "branch":      "lineage-17.1"
   },
   {
     "remote":      "github",
-    "repository":  "mahajant99/kernel_xiaomi_msm8953-sakura",
+    "repository":  "mahajant99/kernel_xiaomi_msm8953-ysl",
     "target_path": "kernel/xiaomi/msm8953",
-    "branch":      "lineage-17.0"
+    "branch":      "lineage-17.1"
   }
 ]
