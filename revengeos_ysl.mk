@@ -24,9 +24,6 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/revengeos/config/common.mk)
 
-# Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
 # Inherit some common RevengeOS flags
 REVENGEOS_BUILDTYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 720
