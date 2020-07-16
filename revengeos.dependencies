@@ -1,0 +1,20 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "ItsVixano/device_xiaomi_msm8953-common-ysl",
+        "target_path":  "device/xiaomi/msm8953-common",
+        "revision":     "revengeos-3.x"
+    },
+    {
+        "remote":       "github",
+        "repository":   "ItsVixano/kernel_xiaomi_ysl-4.9",
+        "target_path":  "kernel/xiaomi/msm8953",
+        "revision":     "kernel-4.9-r27"
+    },
+    {
+        "remote":       "github",
+        "repository":   "ItsVixano/vendor_xiaomi_ysl",
+        "target_path":  "vendor/xiaomi",
+        "revision":     "revengeos-3.x"
+    }
+]
