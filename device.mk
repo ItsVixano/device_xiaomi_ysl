@@ -33,6 +33,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    libdng_sdk.vendor \
     libshims_libui
 
 # Consumer IR
