@@ -25,6 +25,18 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on post-fs-data
+# modify by zhoudan for fingerprint
+    mkdir /data/vendor/fpc 0700 system system
+    mkdir /data/vendor/goodix 0700 system system
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+
+# modify by zhoudan for fingerprint
+    copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db
+    chown system system /data/vendor_de/0/fpdata/user.db
+    rm /data/vendor/fpc/user.db
+
 on boot
     # add for goodix
     chown system system /dev/goodix_fp
@@ -41,7 +53,12 @@ on boot
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/wakeup_enable
     chown system system /sys/devices/platform/soc/soc:fpc1020/wakeup_enable
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/wakeup_enable
-	
+
+    # For generic DT2W
+    chown system system /dev/input/event1
+    chown system system /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode
+    chmod 0664 /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode
+
 service gx_fpd /vendor/bin/gx_fpd
      class core
      user system

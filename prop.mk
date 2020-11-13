@@ -14,3 +14,7 @@ vendor.camera.aux.packagelist2=com.google.android.GoogleCameraWide,com.dual.GCam
 vendor.camera.hal1.packagelist=com.whatsapp \
 persist.camera.dual.camera=0 \
 persist.camera.eis.enable=1
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sf.lcd_density=320

@@ -19,10 +19,10 @@
 set -e
 
 # Required!
-export DEVICE=sakura
+export DEVICE=ysl
 export DEVICE_COMMON=msm8953-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2017
+export DEVICE_BRINGUP_YEAR=2020
 
 ./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
