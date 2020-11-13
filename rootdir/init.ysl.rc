@@ -25,6 +25,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on post-fs-data
+service vendor.power-hal-1-2 /vendor/bin/hw/android.hardware.power@1.2-service-qti
+    override
+    class hal
+    user system
+    group system input
+
 on boot
     # add for goodix
     chown system system /dev/goodix_fp
