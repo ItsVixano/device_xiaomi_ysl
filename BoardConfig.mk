@@ -18,7 +18,7 @@ TARGET_KERNEL_VERSION := 4.9
 # Inherit from common msm8953-common
 -include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/tissot
+DEVICE_PATH := device/xiaomi/ysl
 
 # Filesystem
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -29,7 +29,7 @@ TARGET_NO_RECOVERY := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := tissot_defconfig
+TARGET_KERNEL_CONFIG := ysl_defconfig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
@@ -47,4 +47,4 @@ VENDOR_SECURITY_PATCH := 2020-05-05
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
--include vendor/xiaomi/tissot/BoardConfigVendor.mk
+-include vendor/xiaomi/ysl/BoardConfigVendor.mk
