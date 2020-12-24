@@ -44,6 +44,9 @@ TARGET_POWER_SET_FEATURE_LIB := libpower_feature.xiaomi_ysl
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-05-05
 
