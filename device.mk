@@ -31,6 +31,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8953 \
+    libmm-qcamera
+
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
