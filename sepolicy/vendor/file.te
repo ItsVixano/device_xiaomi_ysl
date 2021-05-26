@@ -1,0 +1,2 @@
+type hal_keymaster_qti_exec, exec_type, file_type, vendor_file_type;
+type hal_gatekeeper_qti_exec, exec_type, file_type, vendor_file_type;
