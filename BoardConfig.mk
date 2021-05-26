@@ -43,5 +43,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-12-12
 
+# SEpolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/vendor/sepolicy
+
 # Inherit the proprietary files
 include vendor/xiaomi/ysl/BoardConfigVendor.mk
