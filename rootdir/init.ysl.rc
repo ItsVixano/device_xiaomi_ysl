@@ -42,6 +42,14 @@ on boot
     chown system system /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
 
+    # Add for DT2W
+    chown system system /dev/input/event1
+    chown system system /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode
+    chmod 0644 /dev/input/event1
+    chmod 0644 /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode
+    write /dev/input/event1 1
+    write /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/fts_gesture_mode 1
+
 on property:sys.fp.vendor=goodix
    setprop ro.boot.fpsensor goodix
    setprop persist.sys.fp.vendor goodix
