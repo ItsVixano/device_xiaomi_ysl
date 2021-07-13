@@ -42,6 +42,9 @@ on boot
     chown system system /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
 
+    # add for DT2W
+    chown system system /sys/touchpanel/double_tap
+
 on property:sys.fp.vendor=goodix
    setprop ro.boot.fpsensor goodix
    setprop persist.sys.fp.vendor goodix
