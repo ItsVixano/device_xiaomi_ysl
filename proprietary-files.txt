@@ -582,8 +582,8 @@ vendor/lib/libmmcamera_ysl_s5k5e8_aux_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii_eeprom.so
 
-# Consumerir
-vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.msm8953.so
+# Consumerir - from onclite patched
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so|23729cc5934cdc80a1ad221c8e85b29aa428ac2c
 
 # Fingerprint
 vendor/etc/permissions/com.fingerprints.extension.xml
