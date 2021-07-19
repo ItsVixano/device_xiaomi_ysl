@@ -21,7 +21,8 @@ PRODUCT_SOONG_NAMESPACES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    init.ysl.rc
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
