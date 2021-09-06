@@ -5,6 +5,24 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so)
+            "${PATCHELF}" --replace-needed "camera.device@1.0-impl.so" "camera.device@1.0-impl-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "camera.device@3.2-impl.so" "camera.device@3.2-impl-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "camera.device@3.3-impl.so" "camera.device@3.3-impl-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "camera.device@3.4-external-impl.so" "camera.device@3.4-external-impl-v28.so" "${2}"
+            "${PATCHELF}" --replace-needed "camera.device@3.4-impl.so" "camera.device@3.4-impl-v28.so" "${2}"
+            ;;
+        vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+            "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+            ;;
+        vendor/lib64/libril-qc-hal-qmi.so)
+            "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
+            ;;
+    esac
+}
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
