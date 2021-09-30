@@ -44,10 +44,3 @@ on boot
 
     # add for DT2W
     chown system system /sys/touchpanel/double_tap
-
-on property:sys.fp.vendor=goodix
-   setprop ro.boot.fpsensor goodix
-   setprop persist.sys.fp.vendor goodix
-
-on property:sys.fp.vendor=FPC
-   setprop ro.boot.fpsensor fpc
