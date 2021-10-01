@@ -583,7 +583,7 @@ vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii_eeprom.so
 
 # Fingerprint
-vendor/lib/hw/fingerprint.default.so:vendor/lib/hw/gf_fingerprint.goodix.default.so
+vendor/lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.goodix.default.so
 vendor/lib/hw/fingerprint.fpc.default.so
 vendor/lib/com.fingerprints.extension@1.0.so
 vendor/lib/libgf_ca.so
