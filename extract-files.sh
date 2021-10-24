@@ -8,7 +8,7 @@
 function blob_fixup() {
     case "${1}" in
         vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so)
-            "${PATCHELF_0_8}" patchelf --remove-needed "libprotobuf-cpp-lite.so" "${2}"
+            "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
             ;;
         vendor/lib64/libril-qc-hal-qmi.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
